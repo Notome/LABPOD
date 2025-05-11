@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ВСЁ ДЛЯ ДОМА | Одежда</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="title" onmouseover="alert('Исполнитель: Батагов Андрей')">Практическое занятие №4</h1>
+            
+            <div class="hero">
+                <h2 class="hero-title">Магазин «ВСЁ ДЛЯ ДОМА»</h2>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <table class="menu-table">
+                <tr>
+                    <td colspan="5"><h3>Одежда</h3></td>
+                </tr>
+                <tr class="menu-row">
+                    <td><a href="index.html">Главная</a></td>
+                    <td><a href="podarki.html">Подарки</a></td>
+                    <td><a href="odezhda.html" class="active">Одежда</a></td>
+                    <td><a href="obuv.html">Обувь</a></td>
+                    <td><a href="contacts.html">Контакты</a></td>
+                </tr>
+            </table>
+        </div>
+    </nav>
+
+    <div class="container">
+        <table class="products-table">
+            <!-- Товар 1 -->
+            <tr class="product-row">
+                <td class="product-icon" id="icon1od">
+                    <a href="images/odezhda1_large.jpg" target="_blank">
+                        <img src="images/odezhda1.jpg" alt="Футболка мужская" width="100">
+                    </a>
+                </td>
+                <td class="product-name">Футболка мужская хлопковая</td>
+                <td class="product-price">1 299 &#8381;</td>
+                <td class="product-action">
+                    <button class="add-to-cart">
+                        <img src="images/korzina.png" width="20" alt="Корзина"> В корзину
+                    </button>
+                </td>
+                <td class="product-details">
+                    <button class="details-btn" onclick="window.dialog1.showModal()">
+                        Подробнее
+                    </button>
+                </td>
+            </tr>
+            
+            <!-- Товар 2 -->
+            <tr class="product-row">
+                <td class="product-icon" id="icon2od">
+                    <a href="images/odezhda2_large.jpg" target="_blank">
+                        <img src="images/odezhda2.jpg" alt="Джинсы женские" width="100">
+                    </a>
+                </td>
+                <td class="product-name">Джинсы женские скинни</td>
+                <td class="product-price">3 499 &#8381;</td>
+                <td class="product-action">
+                    <button class="add-to-cart">
+                        <img src="images/korzina.png" width="20" alt="Корзина"> В корзину
+                    </button>
+                </td>
+                <td class="product-details">
+                    <button class="details-btn" onclick="window.dialog2.showModal()">
+                        Подробнее
+                    </button>
+                </td>
+            </tr>
+            
+            <!-- Товар 3 -->
+            <tr class="product-row">
+                <td class="product-icon" id="icon3od">
+                    <a href="images/odezhda3_large.jpg" target="_blank">
+                        <img src="images/odezhda3.jpg" alt="Платье летнее" width="100">
+                    </a>
+                </td>
+                <td class="product-name">Платье летнее льняное</td>
+                <td class="product-price">2 899 &#8381;</td>
+                <td class="product-action">
+                    <button class="add-to-cart">
+                        <img src="images/korzina.png" width="20" alt="Корзина"> В корзину
+                    </button>
+                </td>
+                <td class="product-details">
+                    <button class="details-btn" onclick="window.dialog3.showModal()">
+                        Подробнее
+                    </button>
+                </td>
+            </tr>
+            
+            <!-- Товар 4 -->
+            <tr class="product-row">
+                <td class="product-icon" id="icon4od">
+                    <a href="images/odezhda4_large.jpg" target="_blank">
+                        <img src="images/odezhda4.jpg" alt="Куртка мужская" width="100">
+                    </a>
+                </td>
+                <td class="product-name">Куртка мужская демисезонная</td>
+                <td class="product-price">5 999 &#8381;</td>
+                <td class="product-action">
+                    <button class="add-to-cart">
+                        <img src="images/korzina.png" width="20" alt="Корзина"> В корзину
+                    </button>
+                </td>
+                <td class="product-details">
+                    <button class="details-btn" onclick="window.dialog4.showModal()">
+                        Подробнее
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Модальные окна -->
+    <!-- Окно для товара 1 -->
+    <dialog id="dialog1" class="modal">
+        <div class="modal-content">
+            <table class="modal-table">
+                <tr>
+                    <td rowspan="2" class="modal-image">
+                        <img src="images/odezhda1.jpg" alt="Футболка мужская" width="200">
+                    </td>
+                    <td class="modal-description">
+                        <h3>Футболка мужская хлопковая</h3>
+                        <p><strong>Состав:</strong> 100% хлопок</p>
+                        <p><strong>Размеры:</strong> S, M, L, XL, XXL</p>
+                        <p><strong>Цвета:</strong> белый, черный, синий, серый</p>
+                        <p><strong>Описание:</strong> Классическая мужская футболка из высококачественного хлопка. 
+                        Мягкая, дышащая ткань обеспечивает комфорт в течение всего дня.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="modal-actions">
+                        <p>
+                            <button class="add-to-cart">
+                                <img src="images/korzina.png" width="20" alt="Корзина"> В корзину
+                            </button>
+                        </p>
+                        <p>
+                            <button onclick="window.dialog1.close()" class="close-btn">
+                                Закрыть окно
+                            </button>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </dialog>
+
+    <!-- Окно для товара 2 -->
+    <dialog id="dialog2" class="modal">
+        <div class="modal-content">
+            <table class="modal-table">
+                <tr>
+                    <td rowspan="2" class="modal-image">
+                        <img src="images/odezhda2.jpg" alt="Джинсы женские" width="200">
+                    </td>
+                    <td class="modal-description">
+                        <h3>Джинсы женские скинни</h3>
+                        <p><strong>Состав:</strong> 98% хлопок, 2% эластан</p>
+                        <p><strong>Размеры:</strong> 40-52</p>
+                        <p><strong>Цвета:</strong> синий, черный, серый</p>
+                        <p><strong>Описание:</strong> Стильные женские джинсы облегающего кроя. 
+                        Удобная посадка по фигуре благодаря добавлению эластана.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="modal-actions">
+                        <p>
+                            <button class="add-to-cart">
+                                <img src="images/korzina.png" width="20" alt="Корзина"> В корзину
+                            </button>
+                        </p>
+                        <p>
+                            <button onclick="window.dialog2.close()" class="close-btn">
+                                Закрыть окно
+                            </button>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </dialog>
+
+    <!-- Окно для товара 3 -->
+    <dialog id="dialog3" class="modal">
+        <div class="modal-content">
+            <table class="modal-table">
+                <tr>
+                    <td rowspan="2" class="modal-image">
+                        <img src="images/odezhda3.jpg" alt="Платье летнее" width="200">
+                    </td>
+                    <td class="modal-description">
+                        <h3>Платье летнее льняное</h3>
+                        <p><strong>Состав:</strong> 100% лён</p>
+                        <p><strong>Размеры:</strong> XS, S, M, L</p>
+                        <p><strong>Цвета:</strong> бежевый, голубой, розовый, зеленый</p>
+                        <p><strong>Описание:</strong> Легкое летнее платье из натурального льна. 
+                        Свободный крой обеспечивает комфорт в жаркую погоду.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="modal-actions">
+                        <p>
+                            <button class="add-to-cart">
+                                <img src="images/korzina.png" width="20" alt="Корзина"> В корзину
+                            </button>
+                        </p>
+                        <p>
+                            <button onclick="window.dialog3.close()" class="close-btn">
+                                Закрыть окно
+                            </button>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </dialog>
+
+    <!-- Окно для товара 4 -->
+    <dialog id="dialog4" class="modal">
+        <div class="modal-content">
+            <table class="modal-table">
+                <tr>
+                    <td rowspan="2" class="modal-image">
+                        <img src="images/odezhda4.jpg" alt="Куртка мужская" width="200">
+                    </td>
+                    <td class="modal-description">
+                        <h3>Куртка мужская демисезонная</h3>
+                        <p><strong>Состав:</strong> 65% полиэстер, 35% хлопок</p>
+                        <p><strong>Размеры:</strong> M, L, XL, XXL</p>
+                        <p><strong>Цвета:</strong> черный, синий, хаки, серый</p>
+                        <p><strong>Описание:</strong> Стильная демисезонная куртка с водоотталкивающей пропиткой. 
+                        Удобный крой и практичные материалы.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="modal-actions">
+                        <p>
+                            <button class="add-to-cart">
+                                <img src="images/korzina.png" width="20" alt="Корзина"> В корзину
+                            </button>
+                        </p>
+                        <p>
+                            <button onclick="window.dialog4.close()" class="close-btn">
+                                Закрыть окно
+                            </button>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </dialog>
+
+    <div class="container">
+        <div class="cart-section">
+            <a href="Korzina.html" class="cart-btn">
+                <img src="images/korzina.png" alt="Корзина" class="cart-icon">
+                <span>Корзина</span>
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Связаться, для поддержки labaratornaya@pyat.ru</p>
+        </div>
+    </footer>
+</body>
+</html>

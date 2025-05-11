@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ВСЁ ДЛЯ ДОМА | Обувь</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="title" onmouseover="alert('Исполнитель: Батагов Андрей')">Практическое занятие №4</h1>
+            
+            <div class="hero">
+                <h2 class="hero-title">Магазин «ВСЁ ДЛЯ ДОМА»</h2>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <table class="menu-table">
+                <tr>
+                    <td colspan="5"><h3>Обувь</h3></td>
+                </tr>
+                <tr class="menu-row">
+                    <td><a href="index.html">Главная</a></td>
+                    <td><a href="podarki.html">Подарки</a></td>
+                    <td><a href="odezhda.html">Одежда</a></td>
+                    <td><a href="obuv.html" class="active">Обувь</a></td>
+                    <td><a href="contacts.html">Контакты</a></td>
+                </tr>
+            </table>
+        </div>
+    </nav>
+
+    <div class="container">
+        <table class="products-table">
+            <!-- Обувь 1 -->
+            <tr class="product-row">
+                <td class="product-icon" id="icon1shoe">
+                    <a href="images/shoe1.jpg" target="_blank">
+                        <img src="images/shoe1.jpg" alt="Кроссовки" width="100">
+                    </a>
+                </td>
+                <td class="product-name">Кроссовки спортивные</td>
+                <td class="product-price">4 599 &#8381;</td>
+                <td class="product-action">
+                    <button class="add-to-cart">
+                        <img src="images/korzina.png" width="20" alt="Корзина"> В корзину
+                    </button>
+                </td>
+                <td class="product-details">
+                    <button class="details-btn" onclick="window.dialogShoe1.showModal()">
+                        Подробнее
+                    </button>
+                </td>
+            </tr>
+
+            <!-- Обувь 2 -->
+            <tr class="product-row">
+                <td class="product-icon" id="icon2shoe">
+                    <a href="images/shoe2.jpg" target="_blank">
+                        <img src="images/shoe2.jpg" alt="Туфли" width="100">
+                    </a>
+                </td>
+                <td class="product-name">Кожаные туфли офисные</td>
+                <td class="product-price">5 999 &#8381;</td>
+                <td class="product-action">
+                    <button class="add-to-cart">
+                        <img src="images/korzina.png" width="20" alt="Корзина"> В корзину
+                    </button>
+                </td>
+                <td class="product-details">
+                    <button class="details-btn" onclick="window.dialogShoe2.showModal()">
+                        Подробнее
+                    </button>
+                </td>
+            </tr>
+
+            <!-- Обувь 3 -->
+            <tr class="product-row">
+                <td class="product-icon" id="icon3shoe">
+                    <a href="images/shoe3.jpg" target="_blank">
+                        <img src="images/shoe3.jpg" alt="Сапоги" width="100">
+                    </a>
+                </td>
+                <td class="product-name">Зимние сапоги</td>
+                <td class="product-price">6 499 &#8381;</td>
+                <td class="product-action">
+                    <button class="add-to-cart">
+                        <img src="images/korzina.png" width="20" alt="Корзина"> В корзину
+                    </button>
+                </td>
+                <td class="product-details">
+                    <button class="details-btn" onclick="window.dialogShoe3.showModal()">
+                        Подробнее
+                    </button>
+                </td>
+            </tr>
+
+            <!-- Обувь 4 -->
+            <tr class="product-row">
+                <td class="product-icon" id="icon4shoe">
+                    <a href="images/shoe4.jpg" target="_blank">
+                        <img src="images/shoe4.jpg" alt="Сандалии" width="100">
+                    </a>
+                </td>
+                <td class="product-name">Сандалии летние</td>
+                <td class="product-price">2 299 &#8381;</td>
+                <td class="product-action">
+                    <button class="add-to-cart">
+                        <img src="images/korzina.png" width="20" alt="Корзина"> В корзину
+                    </button>
+                </td>
+                <td class="product-details">
+                    <button class="details-btn" onclick="window.dialogShoe4.showModal()">
+                        Подробнее
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Модальные окна -->
+    <!-- Окно для обуви 1 -->
+    <dialog id="dialogShoe1" class="modal">
+        <div class="modal-content">
+            <table class="modal-table">
+                <tr>
+                    <td rowspan="2" class="modal-image">
+                        <img src="images/shoe1.jpg" alt="Кроссовки" width="200">
+                    </td>
+                    <td class="modal-description">
+                        <h3>Кроссовки спортивные</h3>
+                        <p><strong>Материал:</strong> синтетическая кожа + сетка</p>
+                        <p><strong>Размеры:</strong> 36-44</p>
+                        <p><strong>Особенности:</strong> 
+                            <ul>
+                                <li>Амортизирующая подошва</li>
+                                <li>Дышащий материал</li>
+                                <li>Съёмные стельки</li>
+                            </ul>
+                        </p>
+                        <p><strong>Цвета:</strong> черный, белый, синий</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="modal-actions">
+                        <p>
+                            <button class="add-to-cart">
+                                <img src="images/korzina.png" width="20" alt="Корзина"> В корзину
+                            </button>
+                        </p>
+                        <p>
+                            <button onclick="window.dialogShoe1.close()" class="close-btn">
+                                Закрыть окно
+                            </button>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </dialog>
+
+    <!-- Окно для обуви 2 -->
+    <dialog id="dialogShoe2" class="modal">
+        <div class="modal-content">
+            <table class="modal-table">
+                <tr>
+                    <td rowspan="2" class="modal-image">
+                        <img src="images/shoe2.jpg" alt="Туфли" width="200">
+                    </td>
+                    <td class="modal-description">
+                        <h3>Кожаные туфли офисные</h3>
+                        <p><strong>Материал:</strong> натуральная кожа</p>
+                        <p><strong>Размеры:</strong> 38-43</p>
+                        <p><strong>Особенности:</strong>
+                            <ul>
+                                <li>Классический дизайн</li>
+                                <li>Удобная колодка</li>
+                                <li>Прошитый рант</li>
+                            </ul>
+                        </p>
+                        <p><strong>Цвета:</strong> черный, коричневый</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="modal-actions">
+                        <p>
+                            <button class="add-to-cart">
+                                <img src="images/korzina.png" width="20" alt="Корзина"> В корзину
+                            </button>
+                        </p>
+                        <p>
+                            <button onclick="window.dialogShoe2.close()" class="close-btn">
+                                Закрыть окно
+                            </button>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </dialog>
+
+    <div class="container">
+        <div class="cart-section">
+            <a href="Korzina.html" class="cart-btn">
+                <img src="images/korzina.png" alt="Корзина" class="cart-icon">
+                <span>Корзина</span>
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Связаться, для поддержки labaratornaya@pyat.ru</p>
+        </div>
+    </footer>
+</body>
+</html>

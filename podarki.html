@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ВСЁ ДЛЯ ДОМА | Подарки</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="title" onmouseover="alert('Исполнитель: Батагов Андрей')">Практическое занятие №4</h1>
+            
+            <div class="hero">
+                <h2 class="hero-title">Магазин «ВСЁ ДЛЯ ДОМА»</h2>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <table class="menu-table">
+                <tr>
+                    <td colspan="5"><h3>Подарки</h3></td>
+                </tr>
+                <tr class="menu-row">
+                    <td><a href="index.html">Главная</a></td>
+                    <td><a href="podarki.html" class="active">Подарки</a></td>
+                    <td><a href="odezhda.html">Одежда</a></td>
+                    <td><a href="obuv.html">Обувь</a></td>
+                    <td><a href="contacts.html">Контакты</a></td>
+                </tr>
+            </table>
+        </div>
+    </nav>
+
+    <div class="container">
+        <table class="products-table">
+            <!-- Подарок 1 -->
+            <tr class="product-row">
+                <td class="product-icon" id="icon1gift">
+                    <a href="images/gift1.jpg" target="_blank">
+                        <img src="images/gift1.jpg" alt="Набор для ванны" width="100">
+                    </a>
+                </td>
+                <td class="product-name">Подарочный набор для ванны</td>
+                <td class="product-price">2 499 &#8381;</td>
+                <td class="product-action">
+                    <button class="add-to-cart">
+                        <img src="images/korzina.png" width="20" alt="Корзина"> В корзину
+                    </button>
+                </td>
+                <td class="product-details">
+                    <button class="details-btn" onclick="window.dialogGift1.showModal()">
+                        Подробнее
+                    </button>
+                </td>
+            </tr>
+
+            <!-- Подарок 2 -->
+            <tr class="product-row">
+                <td class="product-icon" id="icon2gift">
+                    <a href="images/gift2.jpg" target="_blank">
+                        <img src="images/gift2.jpg" alt="Чайный набор" width="100">
+                    </a>
+                </td>
+                <td class="product-name">Чайный набор в подарочной упаковке</td>
+                <td class="product-price">1 799 &#8381;</td>
+                <td class="product-action">
+                    <button class="add-to-cart">
+                        <img src="images/korzina.png" width="20" alt="Корзина"> В корзину
+                    </button>
+                </td>
+                <td class="product-details">
+                    <button class="details-btn" onclick="window.dialogGift2.showModal()">
+                        Подробнее
+                    </button>
+                </td>
+            </tr>
+
+            <!-- Подарок 3 -->
+            <tr class="product-row">
+                <td class="product-icon" id="icon3gift">
+                    <a href="images/gift3.jpg" target="_blank">
+                        <img src="images/gift3.jpg" alt="Набор свечей" width="100">
+                    </a>
+                </td>
+                <td class="product-name">Набор ароматических свечей</td>
+                <td class="product-price">999 &#8381;</td>
+                <td class="product-action">
+                    <button class="add-to-cart">
+                        <img src="images/korzina.png" width="20" alt="Корзина"> В корзину
+                    </button>
+                </td>
+                <td class="product-details">
+                    <button class="details-btn" onclick="window.dialogGift3.showModal()">
+                        Подробнее
+                    </button>
+                </td>
+            </tr>
+
+            <!-- Подарок 4 -->
+            <tr class="product-row">
+                <td class="product-icon" id="icon4gift">
+                    <a href="images/gift4.jpg" target="_blank">
+                        <img src="images/gift4.jpg" alt="Плед" width="100">
+                    </a>
+                </td>
+                <td class="product-name">Мягкий плед в подарочной упаковке</td>
+                <td class="product-price">3 299 &#8381;</td>
+                <td class="product-action">
+                    <button class="add-to-cart">
+                        <img src="images/korzina.png" width="20" alt="Корзина"> В корзину
+                    </button>
+                </td>
+                <td class="product-details">
+                    <button class="details-btn" onclick="window.dialogGift4.showModal()">
+                        Подробнее
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Модальные окна -->
+    <!-- Окно для подарка 1 -->
+    <dialog id="dialogGift1" class="modal">
+        <div class="modal-content">
+            <table class="modal-table">
+                <tr>
+                    <td rowspan="2" class="modal-image">
+                        <img src="images/gift1.jpg" alt="Набор для ванны" width="200">
+                    </td>
+                    <td class="modal-description">
+                        <h3>Подарочный набор для ванны</h3>
+                        <p><strong>Состав:</strong> 
+                            <ul>
+                                <li>Гель для душа 300 мл</li>
+                                <li>Скраб для тела 200 мл</li>
+                                <li>Ароматическая соль 500 г</li>
+                                <li>Мягкое полотенце</li>
+                            </ul>
+                        </p>
+                        <p><strong>Ароматы:</strong> лаванда, ваниль, морская свежесть</p>
+                        <p><strong>Упаковка:</strong> коробка с бантом</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="modal-actions">
+                        <p>
+                            <button class="add-to-cart">
+                                <img src="images/korzina.png" width="20" alt="Корзина"> В корзину
+                            </button>
+                        </p>
+                        <p>
+                            <button onclick="window.dialogGift1.close()" class="close-btn">
+                                Закрыть окно
+                            </button>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </dialog>
+
+    <!-- Окно для подарка 2 -->
+    <dialog id="dialogGift2" class="modal">
+        <div class="modal-content">
+            <table class="modal-table">
+                <tr>
+                    <td rowspan="2" class="modal-image">
+                        <img src="images/gift2.jpg" alt="Чайный набор" width="200">
+                    </td>
+                    <td class="modal-description">
+                        <h3>Чайный набор</h3>
+                        <p><strong>Состав:</strong>
+                            <ul>
+                                <li>4 сорта чая по 50 г</li>
+                                <li>Фарфоровая кружка</li>
+                                <li>Деревянная ложка</li>
+                                <li>Подарочная коробка</li>
+                            </ul>
+                        </p>
+                        <p><strong>Вкусы:</strong> Эрл Грей, Мятный, Ягодный, Травяной</p>
+                        <p><strong>Особенности:</strong> Ручная роспись кружки</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="modal-actions">
+                        <p>
+                            <button class="add-to-cart">
+                                <img src="images/korzina.png" width="20" alt="Корзина"> В корзину
+                            </button>
+                        </p>
+                        <p>
+                            <button onclick="window.dialogGift2.close()" class="close-btn">
+                                Закрыть окно
+                            </button>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </dialog>
+
+    <!-- Окно для подарка 3 -->
+    <dialog id="dialogGift3" class="modal">
+        <div class="modal-content">
+            <table class="modal-table">
+                <tr>
+                    <td rowspan="2" class="modal-image">
+                        <img src="images/gift3.jpg" alt="Набор свечей" width="200">
+                    </td>
+                    <td class="modal-description">
+                        <h3>Набор ароматических свечей</h3>
+                        <p><strong>Состав:</strong>
+                            <ul>
+                                <li>3 свечи в стеклянных стаканах</li>
+                                <li>Время горения: 30 часов</li>
+                                <li>Натуральный воск</li>
+                            </ul>
+                        </p>
+                        <p><strong>Ароматы:</strong> Ваниль-корица, Свежее белье, Хвойный лес</p>
+                        <p><strong>Особенности:</strong> Эко-упаковка из крафтовой бумаги</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="modal-actions">
+                        <p>
+                            <button class="add-to-cart">
+                                <img src="images/korzina.png" width="20" alt="Корзина"> В корзину
+                            </button>
+                        </p>
+                        <p>
+                            <button onclick="window.dialogGift3.close()" class="close-btn">
+                                Закрыть окно
+                            </button>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </dialog>
+
+    <div class="container">
+        <div class="cart-section">
+            <a href="Korzina.html" class="cart-btn">
+                <img src="images/korzina.png" alt="Корзина" class="cart-icon">
+                <span>Корзина</span>
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Связаться, для поддержки labaratornaya@pyat.ru</p>
+        </div>
+    </footer>
+</body>
+</html>
